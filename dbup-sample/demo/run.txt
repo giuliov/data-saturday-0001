@@ -1,0 +1,3 @@
+./PowerShell/upgrade.ps1 -DatabaseName 'dbup-sample'  -DatabaseServer '(localdb)\ProjectsV13'
+
+./C#/bin/Debug/net5.0/dbup-sample.exe  'dbup-sample'  '(localdb)\ProjectsV13'
