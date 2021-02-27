@@ -1,0 +1,8 @@
+Database deployment: still hard after all these years
+
+Application deployment seems to be a solved problem, but what about database? Why is still hard to implement a smooth deploy process?
+In this presentation we will review the current state of database deployment and the practical implication, so you can wisely choose between the options and define or improve your processes.
+- techniques and their limits: state- and migration-based schema upgrade
+- available open source tools and paid counterparts
+- more gotchas
+- final recommendations

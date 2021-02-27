@@ -1,0 +1,14 @@
+Set-Alias sqlpackage 'C:\Program Files\Microsoft SQL Server\150\DAC\bin\sqlpackage.exe'
+
+pushd dacpac-sample
+
+msbuild dacpac-sample.sln
+sqlpackage  /Action:Publish  /SourceFile:bin/Debug/dacpac-sample.dacpac  /Profile:dacpac-sample.publish.xml
+
+### CHANGE SOURCE
+#    [col3] NVARCHAR(MAX) NOT NULL
+
+msbuild dacpac-sample.sln
+sqlpackage  /Action:Publish  /SourceFile:bin/Debug/dacpac-sample.dacpac  /Profile:dacpac-sample.publish.xml
+
+popd
